@@ -6,24 +6,14 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &trans    &kp Q          &kp W    &kp E    &kp R    &kp T          &kp Y    &kp U     &kp I       &kp O      &kp P                &kp 0x46
    &trans    &mt MOD_LSFT A &kp S    &kp D    &kp F    &kp G          &kp H    &kp J     &kp K       &kp L      &mt MOD_RSFT SCLN    &trans
    &trans    &kp Z          &kp X    &kp C    &kp V    &kp B          &kp N    &kp M     &kp CMMA    &kp DOT    &kp FSLH             &trans
-                                     &kp LGUI &mo 1    &kp SPC        &kp BKSP &mo 2     &tog 3
+                                     &kp LGUI &mo 1    &kp SPC        &kp BKSP &mo 2     &KP RALT
                         >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// | SHFT | ESC | TAB | CAP |  ~  |  `  |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans     &kp NUM_1   &kp NUM_2    &kp NUM_3  &kp NUM_4   &kp NUM_5        &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9    &kp NUM_0    &trans
    &trans     &kp BANG    &kp ATSN     &kp HASH   &kp CURU    &kp PRCT         &kp CRRT     &kp AMPS     &kp KMLT     &kp LPRN     &kp RPRN     &trans
@@ -33,16 +23,11 @@
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans    &kp MINUS   &kp EQL     &kp 0x2F  &kp 0x30  &kp BSLH        &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
-   &kp LSFT  &trans      &kp 0x2E    &kp LBKT  &kp RBKT  &kp PIPE          &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
-   &trans    &trans      &trans       &trans    &trans    &trans          &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
-                                      &kp LGUI &trans &kp SPC   &kp RET &trans &tog 3
+   &trans    &kp MINUS   &kp EQL     &kp 0x2F   &kp 0x30  &kp BSLH        &trans    &trans   &trans    &trans   &trans   &trans
+   &kp LSFT  &trans      &kp 0x2E    &kp LBKT   &kp RBKT  &kp PIPE        &trans    &kp 52   &trans    &trans   &trans   &trans
+   &trans    &kp 0x3A    &kp 0x3B    &kp 0x3C   &kp 0x3D  &kp 0x3E        &kp 0x50  &kp 0x51 &kp 0x4F  &trans   &trans   &trans
+                                     &kp LGUI   &trans    &kp SPC         &kp RET   &trans   &trans
                         >;
                 };
         };
