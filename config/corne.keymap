@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+
 &mt {
     tapping_term_ms = <190>;
 };
@@ -19,7 +20,7 @@
    &trans    &kp Q         &kp W    &kp E    &kp R    &kp T          &kp Y    &kp U     &kp I       &kp O      &kp P            &trans
    &trans    &mt LSFT A    &kp S    &kp D    &kp F    &kp G          &kp H    &kp J     &kp K       &kp L      &mt RSFT SCLN    &trans
    &trans    &mt GUI Z     &kp X    &kp C    &kp V    &kp B          &kp N    &kp M     &kp CMMA    &kp DOT    &mt GUI FLSH     &trans
-                                    &kp LGUI &mo 1    &kp SPC        &kp BKSP &mo 2     &KP RALT
+                                    &kp LGUI &mo 1    &kp SPC        &kp BKSP &mo 2     &kp RALT
                         >;
                 };
                 lower_layer {
@@ -31,7 +32,7 @@
                         bindings = <
    &trans     &kp NUM_1   &kp NUM_2    &kp NUM_3  &kp NUM_4   &kp NUM_5        &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9    &kp NUM_0    &trans
    &kp LSFT   &kp BANG    &kp ATSN     &kp HASH   &kp CURU    &kp PRCT         &kp CRRT     &kp AMPS     &kp KMLT     &kp LPRN     &kp RPRN     &trans
-   &trans     &kp ESC     &kp TAB      &trans     &kp TILD    &kp GRAV         &kp QUOT     &trans       &trans       &trans       &trans       &trans
+   &trans     &kp ESC     &kp TAB      &kp 0x39   &kp TILD    &kp GRAV         &kp QUOT     &trans       &trans       &trans       &trans       &trans
                                        &kp RSFT   &trans      &kp SPC          &kp RET      &trans       &kp RALT
                         >;
                 };
@@ -44,8 +45,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans    &trans      &trans      &trans     &trans    &trans          &trans    &trans      &trans    &trans   &trans   &trans
-   &trans    &trans      &trans      &kp A     &trans    &trans          &trans    &kp UAWR    &trans    &trans   &trans   &trans
-   &trans    &trans      &trans      &trans     &trans    &trans          &kp LARW  &kp DARW    &kp RAWR    &trans   &trans   &trans
+   &trans    &trans      &trans      &kp A      &trans    &trans          &trans    &kp UAWR    &trans    &trans   &trans   &trans
+   &trans    &trans      &trans      &trans     &trans    &trans          &kp LARW  &kp DARW    &kp RAWR  &trans   &trans   &trans
                                      &kp LGUI   &trans    &kp SPC         &kp RET   &trans   &trans
                         >;
                 };
