@@ -1,10 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    tapping_term_ms: <190>;
-}
-
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -44,7 +40,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans    &kp MINUS     &kp EQL     &kp Ox2F  &kp 0x30  &kp BSLH        &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
-   &trans    &trans      &kp PLUS    &kp LBKT  &kp RBKT  &kp PIPE        &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
+   &trans    &trans      &kp PLUS    &kp LBKT  &kp RBKT  &kp PIPE          &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
    &trans    &trans       &trans       &trans    &trans    &trans          &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
                                       &kp LGUI &trans &kp SPC   &kp RET &trans &tog 3
                         >;
