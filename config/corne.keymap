@@ -2,9 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 
-&mt {
-    tapping_term_ms = <190>;
-};
+//&mt {
+//    tapping_term_ms = <190>;
+//};
 
 / {
         keymap {
@@ -17,10 +17,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &trans    &kp Q           &kp W    &kp E    &kp R    &kp T          &kp Y    &kp U     &kp I       &kp O      &kp P                &trans
-   &trans    &mt MOD_LSFT A  &kp S    &kp D    &kp F    &kp G          &kp H    &kp J     &kp K       &kp L      &mt MOD_RSFT SCLN    &trans
-   &trans    &mt MOD_LGUI Z  &kp X    &kp C    &kp V    &kp B          &kp N    &kp M     &kp CMMA    &kp DOT    &mt MOD_LGUI FSLH    &trans
-                                      &kp LGUI &mo 1    &kp SPC        &kp BKSP &mo 2     &kp RALT
+  &kp TAB  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I    &kp O   &kp P    &kp BKSP
+  &kp LCTL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp SCLN &kp QUOT
+  &kp LSFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp RSFT
+                  &kp LGUI &mo 1 &kp SPC   &kp RET &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
@@ -30,10 +30,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans     &kp NUM_1   &kp NUM_2    &kp NUM_3  &kp NUM_4   &kp NUM_5        &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9    &kp NUM_0    &trans
-   &kp LSFT   &kp BANG    &kp ATSN     &kp HASH   &kp CURU    &kp PRCT         &kp CRRT     &kp AMPS     &kp KMLT     &kp LPRN     &kp RPRN     &trans
-   &trans     &kp ESC     &kp TAB      &kp 0x39   &kp TILD    &kp GRAV         &kp QUOT     &trans       &trans       &trans       &trans       &trans
-                                       &kp LSFT   &trans      &kp SPC          &kp RET      &trans       &kp RALT
+  &kp ESC  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
+  &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW  &kp DARW  &kp UARW  &kp RARW  &trans    &trans
+  &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+                                  &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
                         >;
                 };
 
@@ -44,10 +44,10 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans    &trans      &trans      &trans     &trans    &trans          &trans    &trans      &trans    &trans   &trans   &trans
-   &trans    &trans      &trans      &kp A      &trans    &trans          &trans    &kp UAWR    &trans    &trans   &trans   &trans
-   &trans    &trans      &trans      &trans     &trans    &trans          &kp LARW  &kp DARW    &kp RAWR  &trans   &trans   &trans
-                                     &kp LGUI   &trans    &kp SPC         &kp RET   &trans   &trans
+    &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
+    &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
+    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
+                                                           &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
                         >;
                 };
         };
