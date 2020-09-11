@@ -24,8 +24,8 @@
 
                 raise_layer {
                         bindings = <
-   &trans    &kp MINUS   &kp EQL     &kp 0x2F   &kp 0x30  &kp BSLH        &trans    &trans    &trans    &trans   &trans   &trans
-   &trans    &trans      &trans      &kp LBKT   &kp RBKT  &kp PIPE        &trans    &trans    &trans    &trans   &trans   &trans
+   &trans    &trans      &trans      &trans     &trans    &trans          &trans    &trans    &trans    &trans   &trans   &trans
+   &trans    &trans      &trans      &trans     &trans    &trans          &trans    &trans    &trans    &trans   &trans   &trans
    &trans    &trans      &trans      &trans     &trans    &trans          &trans    &trans    &trans    &trans   &trans   &trans
                                      &kp LGUI   &trans    &kp SPC         &kp RET   &trans   &trans
                         >;
