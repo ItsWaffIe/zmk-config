@@ -39,9 +39,9 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans    &kp MINUS     &kp EQL     &kp 0x2F  &kp 0x30  &kp BSLH        &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
-   &trans    &trans      &trans    &trans  &trans  &trans          &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
-   &trans    &trans       &trans       &trans    &trans    &trans          &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
+   &trans    &kp MINUS   &kp EQL     &kp 0x2F  &kp 0x30  &kp BSLH        &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
+   &kp LSFT  &trans      &kp 0x2E    &kp LBKT  &kp RBKT  &kp PIPE          &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
+   &trans    &trans      &trans       &trans    &trans    &trans          &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
                                       &kp LGUI &trans &kp SPC   &kp RET &trans &tog 3
                         >;
                 };
