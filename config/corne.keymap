@@ -2,9 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 
-&mt {
-    tapping_term_ms = <190>;
-};
+//&mt {
+//    tapping_term_ms = <190>;
+//};
 
 / {
         keymap {
@@ -17,10 +17,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &trans    &kp Q         &kp W    &kp E    &kp R    &kp T          &kp Y    &kp U     &kp I       &kp O      &kp P            &trans
-   &trans    &mt LSFT A    &kp S    &kp D    &kp F    &kp G          &kp H    &kp J     &kp K       &kp L      &mt RSFT SCLN    &trans
-   &trans    &mt GUI Z     &kp X    &kp C    &kp V    &kp B          &kp N    &kp M     &kp CMMA    &kp DOT    &mt GUI FSLH     &trans
-                                    &kp LGUI &mo 1    &kp SPC        &kp BKSP &mo 2     &kp RALT
+   &trans    &kp Q           &kp W    &kp E    &kp R    &kp T          &kp Y    &kp U     &kp I       &kp O      &kp P            &trans
+   &trans    &mt MOD_LSFT A  &kp S    &kp D    &kp F    &kp G          &kp H    &kp J     &kp K       &kp L      &mt MOD_RSFT SCLN    &trans
+   &trans    &mt MOD_GUI Z   &kp X    &kp C    &kp V    &kp B          &kp N    &kp M     &kp CMMA    &kp DOT    &mt MOD_GUI FSLH     &trans
+                                      &kp LGUI &mo 1    &kp SPC        &kp BKSP &mo 2     &kp RALT
                         >;
                 };
                 lower_layer {
