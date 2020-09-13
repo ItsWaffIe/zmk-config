@@ -39,9 +39,9 @@
 // |     | F1  | F2  | F3  | F4  | F5  |   |     | LFT | DWN |  RGT |     |      |
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-    &trans   &kp MINUS  &kp EQL   &kp 0x2F   &kp 0x30   &kp BSLH    &trans    &trans     &trans     &trans   &trans &reset
-    &kp LSFT &kp MINUS  &kp EQL   &kp 0xB8   &kp 0xB9   &kp PIPE    &trans    &kp UARW   &trans     &trans   &trans &bootloader
-    &kp LGUI &kp 0x3A   &kp 0x3B  &kp 0x3C   &kp 0x3D   &kp 0x3E    &kp LARW  &kp DARW   &kp RARW   &trans   &trans &trans
+    &trans   &kp MINUS         &kp EQL          &kp 0x2F          &kp 0x30          &kp BSLH           &trans    &trans     &trans     &trans   &trans &reset
+    &kp LSFT &kp (LSFT|MINUS)  &kp (LSFT|EQL)   &kp (LSFT|0x2F)   &kp (LSFT|0x30)   &kp (LSFT|BSLH)    &trans    &kp UARW   &trans     &trans   &trans &bootloader
+    &kp LGUI &kp 0x3A          &kp 0x3B         &kp 0x3C          &kp 0x3D          &kp 0x3E           &kp LARW  &kp DARW   &kp RARW   &trans   &trans &trans
                                         &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
                         >;
                 };
