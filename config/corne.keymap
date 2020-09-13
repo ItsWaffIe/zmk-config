@@ -25,9 +25,9 @@
 // |     | ESC | TAB | CAP | TILD| GRAV|   | QUOT|     |     |     |     |     |
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-  &trans    &kp NUM_1   &kp NUM_2   &kp NUM_3   &kp NUM_4   &kp NUM_5     &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9    &kp NUM_0     &trans
-  &kp LSFT  &lsft NUM_1 &lsft NUM_2 &lsft NUM_3 &lsft NUM_4 &lsft NUM_5   &lsft NUM_6  &lsft NUM_7  &lsft NUM_8  &lsft NUM_9  &lsft NUM_0   &kp RSFT
-  &kp LGUI  &kp ESC     &kp TAB     &kp 0x39    &kp TILD    &kp GRAV      &kp QUOT     &trans       &trans       &trans       &trans        &kp RGUI
+  &trans    &kp NUM_1        &kp NUM_2        &kp NUM_3        &kp NUM_4        &kp NUM_5          &kp NUM_6         &kp NUM_7         &kp NUM_8         &kp NUM_9         &kp NUM_0          &trans
+  &kp LSFT  &kp (LSFT|NUM_1) &kp (LSFT|NUM_2) &kp (LSFT|NUM_3) &kp (LSFT|NUM_4) &kp (LSFT|NUM_5)   &kp (RSFT|NUM_6)  &kp (RSFT|NUM_7)  &kp (RSFT|NUM_8)  &kp (RSFT|NUM_9)  &kp (RSFT|NUM_0)   &kp RSFT
+  &kp LGUI  &kp ESC          &kp TAB          &kp 0x39         &kp TILD         &kp GRAV           &kp QUOT          &trans            &trans            &trans            &trans             &kp RGUI
                                                &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
                         >;
                 };
