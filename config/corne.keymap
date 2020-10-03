@@ -1,6 +1,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping_term_ms = <200>;
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
