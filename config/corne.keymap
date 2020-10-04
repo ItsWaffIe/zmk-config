@@ -16,10 +16,10 @@
 // | PRV | G(Z)|  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  | G(/)| VOLD|
 //                   | GUI | LWR | SPC |   | BSP | RSE  | ALT |
                         bindings = <
-  &kp VOLD  &kp Q        &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I    &kp O   &kp P             &kp VOLU
-  &kp LSFT  &mt LSFT A   &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K    &kp L   &mt RSFT SCLN     &kp RSFT
-  &kp LGUI  &mt LGUI Z   &kp X &kp C &kp V &kp B       &kp N &kp M  &kp CMMA &kp DOT &mt RGUI FSLH     &kp RGUI
-                               &kp LGUI &mo 1 &kp SPC     &kp BKSP &kp A &mo 2
+  &trans  &kp Q        &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I    &kp O   &kp P             &trans
+  &trans  &mt LSFT A   &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K    &kp L   &mt RSFT SCLN     &trans
+  &trans  &mt LGUI Z   &kp X &kp C &kp V &kp B       &kp N &kp M  &kp CMMA &kp DOT &mt RGUI FSLH     &trans
+                               &kp LGUI &mo 1 &kp SPC     &kp BKSP &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
@@ -46,9 +46,9 @@
                         bindings = <
     &trans   &kp MINUS         &kp EQL          &kp 0x2F          &kp 0x30          &kp BSLH           &trans    &trans     &trans     &trans   &trans &reset
     &kp LSFT &trans            &trans           &trans            &trans            &trans             &trans    &kp UARW   &trans     &trans   &trans &bootloader
-    //&kp LSFT &kp (LSFT|MINUS)  &kp (LSFT|EQL)   &kp (LSFT|0x2F)   &kp (LSFT|0x30)   &kp (LSFT|BSLH)    &trans    &kp UARW   &trans     &trans   &trans &bootloader
+    //&kp LSFT &kp (LSFT|MINUS)  &kp (LSFT|EQL)   &kp (LSFT|0x2F)   &kp (LSFT|0x30)   a&kp (LSFT|BSLH)    &trans    &kp UARW   &trans     &trans   &trans &bootloader
     &kp LGUI &kp 0x3A          &kp 0x3B         &kp 0x3C          &kp 0x3D          &kp 0x3E           &kp LARW  &kp DARW   &kp RARW   &trans   &trans &trans
-                                        &cp M_VOLD &trans &kp SPC   &kp RET &kp RALT &trans
+                                        &cp M_VOLD &trans &kp SPC   &kp RET &trans &kp RALT
                         >;
                 };
         };
