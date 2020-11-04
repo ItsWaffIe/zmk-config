@@ -37,9 +37,8 @@
 // |     | ESC | TAB | CAP | TILD| GRAV|   | QUOT|     |     |     |     |     |
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-  &bt BT_CLR  &kp NUM_1     &kp NUM_2       &kp NUM_3       &kp NUM_4       &kp NUM_5        &kp NUM_6        &kp NUM_7       &kp NUM_8       &kp NUM_9        &kp NUM_0        &trans
-  &bt BT_CLR  &kp NUM_1     &kp NUM_2       &kp NUM_3       &kp NUM_4       &kp NUM_5        &kp NUM_6        &kp NUM_7       &kp NUM_8       &kp NUM_9        &kp NUM_0        &trans
-/*  &kp LSFT    &kp EXCL      &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CRRT         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &kp RSFT */
+  &bt BT_CLR  &kp N1        &kp N2          &kp N3          &kp N4          &kp N5           &kp N6           &kp N7          &kp N8          &kp N9           &kp N0           &trans
+  &kp LSFT    &kp EXCL      &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CRRT         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &kp RSFT
   &kp LWIN    &kp ESC       &kp TAB         &kp 0x39        &kp TILD        &kp GRAV         &kp QUOT         &trans          &cp M_PREV      &cp M_PLAY       &cp M_NEXT       &trans
                                                              &kp LWIN &trans &kp SPC   &kp RET &trans &cp M_VOLU
                         >;
