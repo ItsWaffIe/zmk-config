@@ -31,8 +31,7 @@
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
   &bt BT_CLR  &kp NUM_1     &kp NUM_2       &kp NUM_3       &kp NUM_4       &kp NUM_5        &kp NUM_6        &kp NUM_7       &kp NUM_8       &kp NUM_9        &kp NUM_0        &trans
-  &kp LSFT    &trans        &trans          &trans          &trans          &trans           &trans           &trans          &trans          &trans           &trans           &kp RSFT
-  //&kp LSFT  &lsft NUM_1   &lsft NUM_2     &lsft NUM_3     &lsft NUM_4     &lsft NUM_5      &rsft NUM_6      &rsft NUM_7     &rsft NUM_8     &rsft NUM_9      &rsft NUM_0      &kp RSFT
+  &kp LSFT    &kp EXCL      &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CRRT         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &kp RSFT
   &kp LGUI    &kp ESC       &kp TAB         &kp 0x39        &kp TILD        &kp GRAV         &kp QUOT         &trans          &cp M_PREV      &cp M_PLAY       &cp M_NEXT       &trans
                                                              &kp LGUI &trans &kp SPC   &kp RET &trans &cp M_VOLU
                         >;
@@ -47,7 +46,6 @@
                         bindings = <
     &trans   &kp MINUS         &kp EQL          &kp 0x2F          &kp 0x30          &kp BSLH           &trans    &trans     &trans     &trans   &trans &trans
     &kp LSFT &trans            &trans           &trans            &trans            &trans             &trans    &kp UARW   &trans     &trans   &trans &trans
-    //&kp LSFT &kp (LSFT|MINUS)  &kp (LSFT|EQL)   &kp (LSFT|0x2F)   &kp (LSFT|0x30)   a&kp (LSFT|BSLH)    &trans    &kp UARW   &trans     &trans   &trans &bootloader
     &kp LGUI &kp 0x3A          &kp 0x3B         &kp 0x3C          &kp 0x3D          &kp 0x3E           &kp LARW  &kp DARW   &kp RARW   &trans   &trans &trans
                                         &cp M_VOLD &trans &kp SPC   &kp RET &trans &kp RALT
                         >;
