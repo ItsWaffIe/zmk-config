@@ -8,6 +8,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+&mt {
+    tapping_term_ms = <200>;
+};
 
 / {
         keymap {
@@ -34,7 +37,7 @@
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
   &bt BT_CLR  &kp N1            &kp N2          &kp N3          &kp N4          &kp N5           &kp N6           &kp N7          &kp N8          &kp N9           &kp N0           &trans
-  &trans      &mt LSHFT EXCL    &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CARET        &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &trans
+  &trans      &mt LSHFT EXCL    &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CARET         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &trans
   &trans      &mt LWIN ESC      &kp TAB         &kp CAPS        &kp TILDE       &kp GRAVE        &kp SQT          &trans          &trans          &trans           &trans           &trans
                                                              &kp LWIN &trans &kp SPACE   &kp ENTER &trans &trans
                         >;
