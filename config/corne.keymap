@@ -1,4 +1,3 @@
-
 /*
 * Copyright (c) 2020 The ZMK Contributors
 *
@@ -24,10 +23,10 @@
 // | PRV | G(Z)|  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  | G(/)| VOLD|
 //                   | GUI | LWR | SPC |   | BSP | RSE  | ALT |
                         bindings = <
-  &trans  &kp Q        &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I    &kp O   &kp P             &trans
-  &trans  &mt LSHFT A  &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K    &kp L   &mt RSHFT SCLN    &trans
-  &trans  &mt LWIN  Z  &kp X &kp C &kp V &kp B       &kp N &kp M  &kp CMMA &kp DOT &mt RWIN FSLH     &trans
-                               &kp LWIN &mo 1 &kp SPC     &kp BKSP &mo 2 &kp RALT
+  &trans  &kp Q        &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I      &kp O   &kp P             &trans
+  &trans  &mt LSHFT A  &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K      &kp L   &mt RSHFT SCLN    &trans
+  &trans  &mt LWIN Z   &kp X &kp C &kp V &kp B       &kp N &kp M  &kp COMMA  &kp DOT &mt RWIN FSLH     &trans
+                        &kp LALT  &mo 1 &kp SPACE     &kp BSPC &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
@@ -37,10 +36,10 @@
 // |     | ESC | TAB | CAP | TILD| GRAV|   | QUOT|     |     |     |     |     |
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-  &bt BT_CLR  &kp N1        &kp N2          &kp N3          &kp N4          &kp N5           &kp N6           &kp N7          &kp N8          &kp N9           &kp N0           &trans
-  &kp LSHFT   &kp EXCL      &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CRRT         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &kp RSHFT
-  &kp LWIN    &kp ESC       &kp TAB         &kp CAPS        &kp TILD        &kp GRAV         &kp QUOT         &trans          &trans          &trans           &trans           &trans
-                                                             &kp LWIN &trans &kp SPC   &kp RET &trans &cp M_VOLU
+  &bt BT_CLR  &kp N1            &kp N2          &kp N3          &kp N4          &kp N5           &kp N6           &kp N7          &kp N8          &kp N9           &kp N0           &trans
+  &trans      &mt LSHFT EXCL    &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CRRT         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &trans
+  &trans      &mt LWIN ESC      &kp TAB         &kp CAPS        &kp TILDE       &kp GRAVE        &kp SQT          &trans          &trans          &trans           &trans           &trans
+                                                             &kp LWIN &trans &kp SPACE   &kp ENTER &trans &trans
                         >;
                 };
 
@@ -51,10 +50,10 @@
 // |     | F1  | F2  | F3  | F4  | F5  |   |     | LFT | DWN |  RGT |     |      |
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-    &trans     &kp MINUS         &kp EQUAL        &kp KBKT          &kp RBKT          &kp BSLH           &trans    &trans     &trans     &trans   &trans &trans
-    &kp LSHFT  &kp UNDER         &kp PLUS         &kp LBRC          &kp RBRC          &kp PIPE           &trans    &kp UARW   &trans     &trans   &trans &trans
-    &kp LWIN   &kp 0x3A          &kp 0x3B         &kp 0x3C          &kp 0x3D          &kp 0x3E           &kp LARW  &kp DARW   &kp RARW   &trans   &trans &trans
-                                        &cp M_VOLD &trans &kp SPC   &kp RET &trans &kp RALT
+    &trans     &kp MINUS         &kp EQUAL     &kp LBKT          &kp RBKT          &kp BSLH           &trans    &trans     &trans     &trans   &trans &trans
+    &trans     &mt LSHFT UNDER   &kp PLUS      &kp LBRC          &kp RBRC          &kp PIPE           &trans    &kp UP     &trans     &trans   &trans &trans
+    &trans     &kp F1            &kp F2        &kp F3            &kp F4            &kp F5             &kp LEFT  &kp DOWN   &kp RIGHT  &trans   &trans &trans
+                                        &trans &trans &kp SPACE   &kp ENTER &trans &kp RALT
                         >;
                 };
         };
