@@ -38,8 +38,8 @@
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
   &bt BT_CLR  &kp N1        &kp N2          &kp N3          &kp N4          &kp N5           &kp N6           &kp N7          &kp N8          &kp N9           &kp N0           &trans
-  &kp LSFT    &kp EXCL      &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CRRT         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &kp RSFT
-  &kp LWIN    &kp ESC       &kp TAB         &kp CAPS        &kp TILD        &kp GRAV         &kp QUOT         &trans          &cp M_PREV      &cp M_PLAY       &cp M_NEXT       &trans
+  &kp LSHFT   &kp EXCL      &kp AT          &kp HASH        &kp DLLR        &kp PRCNT        &kp CRRT         &kp AMPS        &kp STAR        &kp LPAR         &RPAR            &kp RSHFT
+  &kp LWIN    &kp ESC       &kp TAB         &kp CAPS        &kp TILD        &kp GRAV         &kp QUOT         &trans          &trans          &trans           &trans           &trans
                                                              &kp LWIN &trans &kp SPC   &kp RET &trans &cp M_VOLU
                         >;
                 };
@@ -51,9 +51,9 @@
 // |     | F1  | F2  | F3  | F4  | F5  |   |     | LFT | DWN |  RGT |     |      |
 //                   | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-    &trans   &kp MINUS         &kp EQUAL        &kp KBKT          &kp RBKT          &kp BSLH           &trans    &trans     &trans     &trans   &trans &trans
-    &kp LSFT &kp UNDER         &kp PLUS         &kp LBRC          &kp RBRC          &kp PIPE           &trans    &kp UARW   &trans     &trans   &trans &trans
-    &kp LWIN &kp 0x3A          &kp 0x3B         &kp 0x3C          &kp 0x3D          &kp 0x3E           &kp LARW  &kp DARW   &kp RARW   &trans   &trans &trans
+    &trans     &kp MINUS         &kp EQUAL        &kp KBKT          &kp RBKT          &kp BSLH           &trans    &trans     &trans     &trans   &trans &trans
+    &kp LSHFT  &kp UNDER         &kp PLUS         &kp LBRC          &kp RBRC          &kp PIPE           &trans    &kp UARW   &trans     &trans   &trans &trans
+    &kp LWIN   &kp 0x3A          &kp 0x3B         &kp 0x3C          &kp 0x3D          &kp 0x3E           &kp LARW  &kp DARW   &kp RARW   &trans   &trans &trans
                                         &cp M_VOLD &trans &kp SPC   &kp RET &trans &kp RALT
                         >;
                 };
