@@ -25,8 +25,8 @@
 //                   | GUI | LWR | SPC |   | BSP | RSE  | ALT |
                         bindings = <
   &trans  &kp Q        &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I    &kp O   &kp P             &trans
-  &trans  &mt LSHFT A  &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K    &kp L   &mt RShFT SCLN     &trans
-  &trans  &mt LGUI Z   &kp X &kp C &kp V &kp B       &kp N &kp M  &kp CMMA &kp DOT &mt RWIN FSLH     &trans
+  &trans  &mt LSHFT A  &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K    &kp L   &mt RSHFT SCLN    &trans
+  &trans  &mt LWIN  Z  &kp X &kp C &kp V &kp B       &kp N &kp M  &kp CMMA &kp DOT &mt RWIN FSLH     &trans
                                &kp LWIN &mo 1 &kp SPC     &kp BKSP &mo 2 &kp RALT
                         >;
                 };
