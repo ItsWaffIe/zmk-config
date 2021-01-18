@@ -17,27 +17,27 @@
         compatible = "zmk,combos";
         combo_ent {
             timeout-ms = <40>;
-            key-positions = <5 8>;
+            key-positions = <4 7>;
             bindings = <&kp ENTER>;
         };
         combo_quote {
             timeout-ms = <40>;
-            key-positions = <18 19>;
+            key-positions = <17 18>;
             bindings = <&kp SQT>;
         };
         combo_ques {
             timeout-ms = <40>;
-            key-positions = <29 32>;
+            key-positions = <28 31>;
             bindings = <&kp QUESTION>;
         };
         combo_dquote {
             timeout-ms = <40>;
-            key-positions = <28 32>;
+            key-positions = <27 31>;
             bindings = <&kp ENTER>;
         };
         combo_col {
             timeout-ms = <40>;
-            key-positions = <6 7>;
+            key-positions = <5 6>;
             bindings = <&kp ENTER>;
         };
     };
