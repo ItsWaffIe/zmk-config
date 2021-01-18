@@ -15,10 +15,30 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+        combo_ent {
+            timeout-ms = <40>;
+            key-positions = <5 8>;
+            bindings = <&kp ENTER>;
+        };
+        combo_quote {
+            timeout-ms = <40>;
+            key-positions = <18 19>;
+            bindings = <&kp SQT>;
+        };
+        combo_ques {
+            timeout-ms = <40>;
+            key-positions = <29 32>;
+            bindings = <&kp QUESTION>;
+        };
+        combo_dquote {
+            timeout-ms = <40>;
+            key-positions = <28 32>;
+            bindings = <&kp ENTER>;
+        };
+        combo_col {
+            timeout-ms = <40>;
+            key-positions = <6 7>;
+            bindings = <&kp ENTER>;
         };
     };
 };
