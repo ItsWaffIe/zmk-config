@@ -21,6 +21,7 @@
             bindings = <&kp ESC>;
         };
     };
+};
 
 
 / {
