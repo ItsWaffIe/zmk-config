@@ -13,6 +13,17 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
+
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -35,8 +46,8 @@
 
                 raise_layer {
                         bindings = <
-   &trans &kp MINUS       &kp EQUAL &kp LBKT &kp RBKT &kp BSLH     &trans &trans &trans &trans &trans    &trans
-   &trans &mt LSHFT UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE     &trans &trans &trans &trans &kp RSHFT &trans
+   &trans &kp MINUS       &kp EQUAL &kp LBKT &kp RBKT &kp BSLH     &trans &trans &trans &trans &trans    &reset 
+   &trans &mt LSHFT UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE     &trans &trans &trans &trans &kp RSHFT &bootloader
    &trans &mt LCMD F1     &kp F2    &kp F3   &kp F4   &kp F5       &trans &trans &trans &trans &kp RCMD  &trans
                                     &kp LGUI &trans &kp SPACE      &kp BSPC &trans &kp RALT
                         >;
