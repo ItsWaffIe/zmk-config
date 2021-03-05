@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: okke-formsma
-      url-base: https://github.com/okke-formsma/zmk.git
+      url-base: https://github.com/okke-formsma
   projects:
     - name: zmk
       remote: okke-formsma
