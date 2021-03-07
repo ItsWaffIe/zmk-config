@@ -62,7 +62,7 @@
                         bindings = <
    &trans       &kp Q        &kp W &kp E &kp R &kp T         &kp Y &kp U  &kp I     &kp O   &kp P           &kp RG(RS(N4))
    &kp LG(TAB)  &mt LSHFT A  &kp S &kp D &kp F &kp G         &kp H &kp J  &kp K     &kp L   &mt LSHFT SEMI  &trans
-   &trans       &mt LCMD Z   &kp X &kp C &kp V &kp B         &kp N &kp M  &kp COMMA &kp DOT &mt RCMD FSLH   &trans
+   &trans       &mt LCMD Z   &kp X &kp C &kp V &kp B         &kp N &kp M  &kp COMMA &kp DOT &mt RCMD FSLH   &kp RG(S)
                              &kp LALT &mo 1 &kp SPACE        &kp BSPC &mo 2 &kp RALT
                         >;
                 };
@@ -71,7 +71,7 @@
    &bt BT_CLR &kp N1         &kp N2   &kp N3     &kp N4     &kp N5         &kp N6    &kp N7        &kp N8     &kp N9    &kp N0         &trans
    &trans     &mt LSHFT EXCL &kp AT   &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET &kp AMPERSAND &kp ASTRK  &kp LPAR  &mt RSHFT RPAR &trans
    &trans     &mt LCMD ESC   &kp TAB  &kp CAPS   &kp TILDE  &kp GRAVE      &kp LEFT  &kp UP        &kp DOWN   &kp RIGHT &kp RCMD         &kp RCMD
-                                            &kp LALT &trans &kp SPACE      &kp BSPC &trans &kp RALT
+                                            &kp LALT &trans &kp SPACE      &cp C_VOL_UP &trans &kp RALT
                         >;
                 };
 
@@ -80,7 +80,7 @@
    &trans   &kp MINUS       &kp EQUAL &kp LBKT &kp RBKT &kp BSLH     &trans &trans &trans &trans &trans         &trans 
    &trans   &mt LSHFT UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE     &trans &trans &trans &trans &kp LSHFT      &trans
    &trans   &mt LCMD F1     &kp F2    &kp F3   &kp F4   &kp F5       &kp F6 &kp F7 &kp F8 &kp F9 &mt RCMD F10   &trans
-                                   &kp LGUI &trans &kp K_VOL_DN      &kp BSPC &trans &kp RALT
+                                   &kp LGUI &trans &cp C_VOL_DN      &kp BSPC &trans &kp RALT
                         >;
                 };
         };
